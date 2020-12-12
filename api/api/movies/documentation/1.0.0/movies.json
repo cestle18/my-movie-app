@@ -539,9 +539,6 @@
               "Nom": {
                 "type": "string"
               },
-              "movie": {
-                "type": "string"
-              },
               "published_at": {
                 "type": "string"
               },

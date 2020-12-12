@@ -525,34 +525,6 @@
           "Nom": {
             "type": "string"
           },
-          "movie": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Titre": {
-                "type": "string"
-              },
-              "Description": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -562,9 +534,6 @@
       "NewCategorie": {
         "properties": {
           "Nom": {
-            "type": "string"
-          },
-          "movie": {
             "type": "string"
           },
           "published_at": {

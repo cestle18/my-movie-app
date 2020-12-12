@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "Catégories",
+    "name": "Categories",
     "description": ""
   },
   "options": {
@@ -13,10 +13,6 @@
   "attributes": {
     "Nom": {
       "type": "string"
-    },
-    "movie": {
-      "via": "category",
-      "model": "movies"
     }
   }
 }
