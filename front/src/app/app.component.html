@@ -1,0 +1,92 @@
+<h1 class="titre">My Movie</h1>
+
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col" *ngFor="let movie of movies">
+      <div class="card" style="width: 15rem">
+        <img
+          src="https://s.france24.com/media/display/c3d8bee2-0fd1-11e9-877a-005056bff430/w:1280/p:16x9/e7d6dbbbc5026e23e9a14efd0b43230d.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ movie.Titre }} SELECT Titre FROM Movies WHERE id = {{ movie.id }}
+          </h5>
+          <p class="card-text">
+            {{ movie.Description }} SELECT Description FROM Movies WHERE id =
+            {{ movie.id }}
+          </p>
+          <p>
+            {{ movie.category.Nom }} SELECT Categories.Nom FROM Categories INNER
+            JOIN Movies ON Movies.category = Categories.id WHERE Movies.id =
+            {{ movie.id }}
+          </p>
+
+          <h6>Ajouter une note</h6>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">5</label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Ajouter un commentaire</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
